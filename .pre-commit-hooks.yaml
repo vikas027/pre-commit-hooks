@@ -1,0 +1,17 @@
+---
+- id: check-commitsar
+  name: Check if commits are compliant
+  description: Make sure your commits are compliant with conventional commits
+  entry: check-commitsar
+  language: python
+  types: [text]
+  stages: [commit, post-commit, push]
+  always_run: true
+  # args: [--dry-run, --ticket-prefix, IN-] #OR [--ticket-prefix, IN-] All Arguments are optional
+    
+- id: check-symlinks
+  name: check for broken symlinks
+  description: checks for symlinks which do not point to anything.
+  entry: check-symlinks
+  language: python
+  types: [symlink]
