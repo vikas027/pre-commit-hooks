@@ -1,9 +1,9 @@
+''' Check if commits are compliant with conventional commits '''
+
 from __future__ import annotations
 
 import argparse
 from hooks.check_tool import is_tool
-
-
 
 
 def main(argv: Sequence[str] | None = None) -> int:
