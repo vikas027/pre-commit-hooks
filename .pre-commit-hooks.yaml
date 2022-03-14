@@ -5,6 +5,8 @@
   entry: check-commitsar
   language: python
   types: [text]
-  stages: [commit, post-commit, push]
+  pass_filenames: false
+  # stages: [commit, post-commit, pre-push, push, manual]
   always_run: true
-  # args: [--dry-run, --ticket-prefix, IN-] #OR [--ticket-prefix, IN-] All Arguments are optional
+  # Argument(s) are optional
+  # args: [--dry-run] OR [--dry-run, --ticket-prefix, JIRA-]  OR [--ticket-prefix, JIRA-]

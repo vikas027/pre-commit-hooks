@@ -1,0 +1,8 @@
+---
+# https://commitsar.aevea.ee/configuration/config-file/
+commits:
+  disabled: false
+  strict: true
+  limit: 0
+  all: false
+  upstreamBranch: origin/main

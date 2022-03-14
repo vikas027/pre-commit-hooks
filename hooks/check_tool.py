@@ -1,7 +1,5 @@
 ''' Check if a tools exists or not '''
 
-from __future__ import annotations
-
 from shutil import which
 
 
