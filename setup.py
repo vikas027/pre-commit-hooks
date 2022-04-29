@@ -5,5 +5,6 @@ from __future__ import annotations
 from setuptools import setup
 setup(
     name="hooks",
-    version="0.0.1"
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
 )
