@@ -10,3 +10,13 @@
   always_run: true
   # Argument(s) are optional
   # args: [--dry-run] OR [--dry-run, --ticket-prefix, JIRA-]  OR [--ticket-prefix, JIRA-]
+
+- id: present-files-dirs
+  name: Check if specified files or directories are present
+  description: Make sure your commits are compliant with conventional commits
+  entry: present-files-dirs
+  language: python
+  types: [text]
+  pass_filenames: false
+  always_run: true
+  # args: [--dry-run]
